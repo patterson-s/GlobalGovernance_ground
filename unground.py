@@ -32,6 +32,7 @@ BLOCK_COLOR = {
     "Departments and Offices": "#b7950b", "Economic and Social Council Bodies": "#a04000",
     "Regional Commissions": "#1e8449", "Member States": "#6c3483",
     "UN System Bodies": "#566573", "Instruments": "#922b21",
+    "UN System": "#1f4e79",
 }
 
 

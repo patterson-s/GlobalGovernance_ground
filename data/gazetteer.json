@@ -6,10 +6,10 @@
    "curated extras"
   ],
   "n_entities": 369,
-  "n_aliases": 1909,
+  "n_aliases": 1912,
   "n_ambiguous_aliases": 1,
-  "spine_entities": 111,
-  "reference_only_entities": 252,
+  "spine_entities": 112,
+  "reference_only_entities": 251,
   "captial_required_aliases": [
    "chad",
    "china",
@@ -2082,6 +2082,21 @@
   ],
   "united nations economic and social commission for western asia": [
    "regional_commissions:economic_and_social_commission_for_western_asia"
+  ],
+  "un": [
+   "un"
+  ],
+  "united nations": [
+   "un"
+  ],
+  "united nations organization": [
+   "un"
+  ],
+  "uno": [
+   "un"
+  ],
+  "the united nations": [
+   "un"
   ],
   "fao": [
    "ref:agency:0202"
@@ -5478,12 +5493,6 @@
   ],
   "estados unidos de america": [
    "ref:country:0185"
-  ],
-  "un": [
-   "ref:organ:0194"
-  ],
-  "united nations": [
-   "ref:organ:0194"
   ],
   "unhrc": [
    "ref:organ:0201"
@@ -13223,6 +13232,34 @@
    "ref_id": null,
    "status": "active",
    "hq": ""
+  },
+  "un": {
+   "id": "un",
+   "canonical": "United Nations",
+   "acronym": "UN",
+   "type": "ORGANIZATION",
+   "block": "UN System",
+   "parent": "",
+   "hierarchy_path": [
+    "UN system",
+    "UN System",
+    "United Nations"
+   ],
+   "definition": "The international organization established by the Charter of the United Nations (1945), comprising 193 Member States.",
+   "sources": [
+    "curated"
+   ],
+   "aliases": [
+    "UN",
+    "United Nations",
+    "United Nations Organization",
+    "UNO",
+    "the United Nations"
+   ],
+   "multilingual": {},
+   "unterm_record_ids": [],
+   "ref_id": "organ:0194",
+   "status": "active"
   },
   "ref:agency:0202": {
    "id": "ref:agency:0202",
@@ -26076,33 +26113,6 @@
    },
    "unterm_record_ids": [],
    "ref_id": "country:0185",
-   "status": "active",
-   "admission_date": ""
-  },
-  "ref:organ:0194": {
-   "id": "ref:organ:0194",
-   "canonical": "United Nations",
-   "acronym": "UN",
-   "type": "ORGAN",
-   "block": "Principal Organs",
-   "parent": "United Nations",
-   "hierarchy_path": [
-    "UN system",
-    "Principal Organs",
-    "United Nations",
-    "United Nations"
-   ],
-   "definition": "",
-   "sources": [
-    "en.wiki Category:United Nations organs"
-   ],
-   "aliases": [
-    "UN",
-    "United Nations"
-   ],
-   "multilingual": {},
-   "unterm_record_ids": [],
-   "ref_id": "organ:0194",
    "status": "active",
    "admission_date": ""
   },

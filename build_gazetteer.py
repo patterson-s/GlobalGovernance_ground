@@ -67,7 +67,9 @@ def add_entity(eid, canonical, etype, block, parent, definition, sources,
         "type": etype,
         "block": block,
         "parent": parent or "",
-        "hierarchy_path": [p for p in ("UN system", block, parent or None, canonical) if p],
+        "hierarchy_path": [p for p in ("UN system", block,
+                                       None if parent == canonical else parent,
+                                       canonical) if p],
         "definition": (definition or "").strip()[:600],
         "sources": sources,
         "aliases": [],
@@ -110,6 +112,15 @@ for block, payload in oc["blocks"].items():
                    "unterm_record_ids": [m["unterm_record_id"]] if m.get("unterm_record_id") else [],
                    "hq": m.get("hq", "")},
         )
+
+# the UN itself is a parent_organ in the chart, never a member — add it explicitly so
+# "United Nations" resolves to one spine entity instead of a stray reference row
+add_entity(eid="un", canonical="United Nations", etype="ORGANIZATION",
+           block="UN System", parent="",
+           definition="The international organization established by the Charter of the "
+                      "United Nations (1945), comprising 193 Member States.",
+           sources=["curated"], acronym="UN",
+           aliases=["United Nations Organization", "UNO", "the United Nations"])
 
 spine_count = len(entities)
 
